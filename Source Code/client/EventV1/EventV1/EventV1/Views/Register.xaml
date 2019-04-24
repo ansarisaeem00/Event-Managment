@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EventV1.ViewModels"
+             x:Class="EventV1.Register"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <viewmodels:RegisterViewModel>
+            
+        </viewmodels:RegisterViewModel>
+    </ContentPage.BindingContext>
+    
+    <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+        <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+            <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+                <Frame 
+                   x:Name="CircleProfilePic"
+                   CornerRadius="57"
+                   HeightRequest="90"
+                   WidthRequest="90"
+                   OutlineColor="Blue"
+                >
+                    <Image Source="profilePic.png" 
+                       HeightRequest="75"
+                       WidthRequest="75"
+                       HorizontalOptions="CenterAndExpand"
+                       Aspect="AspectFit" />
+
+                </Frame>
+                <Label Text="Event Hub" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+               
+            </StackLayout>
+        </Frame>
+
+
+        <Frame HasShadow="True"
+               CornerRadius="20"
+               HeightRequest="500 "
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+            <StackLayout 
+                     >
+                <Label Text="Register"
+                   Font="25"
+                   TextColor="CornflowerBlue"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   />
+
+                <Label Text="E-MAIL"
+                        FontSize="Medium"
+                       />
+                <Entry x:Name="email"
+                       Text="{Binding Email}"/>
+
+                <Label Text="PASSWORD"
+                   FontSize="Medium"/>
+                <Entry IsPassword="True" 
+                       x:Name="pass"
+                       Text="{Binding Password}"/>
+
+
+                <Label Text="CONFIRM PASSWORD"
+                   FontSize="Medium"/>
+                <Entry IsPassword="True"
+                       x:Name="confirmpass"
+                       Text="{Binding ConfirmPassword}"/>
+
+                <Button Text="SIGN IN"
+                        BackgroundColor="CornflowerBlue" 
+                        HeightRequest="60"
+                        FontSize="Large"
+                        TextColor="White"
+                        Command="{Binding RegisterCommand}"
+                        Clicked="SignInButton_Clicked"
+                        />
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <Label Text="Already Register ?"/>
+                    <Label Text="Sign In" 
+                           TextColor="CornflowerBlue"
+                           >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

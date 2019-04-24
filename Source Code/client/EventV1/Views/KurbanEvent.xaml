@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EventV1.ViewModels"
+             x:Class="EventV1.Views.KurbanEvent"
+            NavigationPage.HasNavigationBar="False">
+    <StackLayout x:Name="HomeScreen">
+        <Frame
+                BackgroundColor="White">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Source="user.png"
+                               HeightRequest="35"
+                               WidthRequest="35"
+                               Grid.Row="0" Grid.Column="0" >
+                    
+                </Image>
+                <Label
+                        Margin="-5,5,0,0"
+                        x:Name="Username"
+                        Text="{Binding User}"
+                        FontSize="13"
+                        TextColor="CornflowerBlue"
+                        Grid.Row="0" Grid.Column="1"                         />
+
+                <Image Source="planning.png" 
+                           HeightRequest="35"
+                           WidthRequest="35"
+                           Grid.Row="0" Grid.Column="4" 
+                        />
+
+
+                <Image Source="bell.png"
+                               HeightRequest="35"
+                               WidthRequest="35"
+                            Grid.Row="0" Grid.Column="5" 
+                           />
+            </Grid>
+
+        </Frame>
+
+
+        <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+            <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+                <Frame 
+                   x:Name="CircleProfilePic"
+                   
+                   CornerRadius="40"
+                   HeightRequest="50"
+                   OutlineColor="Blue"
+                >
+                    <SearchBar
+                            Placeholder="Search Event You are Intrested"
+                            FontSize="Medium"
+                        x:Name="Searchbar"
+                        TextChanged="Searchbar_TextChanged"
+                            />
+
+                </Frame>
+            </StackLayout>
+        </Frame>
+        <ActivityIndicator
+            x:Name="Progress"
+            IsRunning="True"
+            IsEnabled="True"
+            IsVisible="True"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Color="CornflowerBlue"
+            />
+
+        <ListView x:Name="listView"
+                  IsPullToRefreshEnabled="True"
+                  Refreshing="ListView_Refreshing"
+                  HasUnevenRows="True"
+                 
+                 >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                <ViewCell
+                    >
+                    <StackLayout Orientation="Horizontal" 
+                             Margin="0 , 10"
+                                 >
+                        <Image
+                            x:Name="Poster"
+                                   BackgroundColor="Transparent"
+                                   HeightRequest="300"
+                                   VerticalOptions="Center"
+                                   Source="MusicEvent.png"       
+                            />
+                        <StackLayout Padding="-1">
+                            <StackLayout Orientation="Horizontal">
+                                    
+                                    <Label Text="Event Name:"/>
+                                <Label  Text="{Binding EventName}" 
+                                    FontSize="16"
+                                    FontAttributes="Bold"    
+                                    VerticalOptions="Center" 
+                                    x:Name="EventName"
+                                    TextColor="Black"/>
+                            </StackLayout>
+
+
+                            <Label  Text="{Binding EventVenue}" 
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" 
+                    x:Name="EventVenue"
+                    TextColor="Black"/>
+
+                            <Label   Text="{Binding date , StringFormat='{0:MMMM dd, yyyy}'}"
+                    FontSize="16"
+                    FontAttributes="Bold"                            
+                    VerticalOptions="Center" 
+                    x:Name="EventDate"
+                    TextColor="Black"/>
+
+                            <Label  Text="{Binding date , StringFormat='{}{0:hh\\:mm}'}" 
+                    FontSize="16"
+                    FontAttributes="Bold"                            
+                    VerticalOptions="Center" 
+                    x:Name="EventTime"
+                    TextColor="Black"/>
+
+                            <Button Text="Enroll"
+                                    BackgroundColor="CornflowerBlue"
+                                    TextColor="White"/>
+
+                            <Button Text="View Detail"
+                                    BackgroundColor="CornflowerBlue"
+                                    TextColor="White" 
+                                    x:Name="ViewDetail"/>
+
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </StackLayout>
+
+</ContentPage>

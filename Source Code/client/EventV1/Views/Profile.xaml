@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:EventV1.Views"
+             xmlns:viewmodels="clr-namespace:EventV1.ViewModels"
+             x:Class="EventV1.Views.Profile">
+    <ContentPage.BindingContext>
+        <viewmodels:LoginViewModel/>
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout Spacing="0">
+            <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout
+                            Grid.Row="0"
+                            Grid.Column="0">
+
+                            <Frame 
+                           HasShadow="True"
+                           x:Name="CircleProfilePic"
+                           CornerRadius="77"
+                            HeightRequest="125"
+                             WidthRequest="125"
+                        >
+                                <Image Source="profilePic.png" 
+                                   
+                                   HorizontalOptions="CenterAndExpand"
+                                   Aspect="AspectFit" />
+
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout
+                            Grid.Row="0"
+                            Grid.Column="1">
+                            <Label Text="UserName" 
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center" 
+                                   TextColor="White"
+                                   Style="{DynamicResource PrimaryStyle}"/>
+
+                            <Label Text="E-mail" 
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center" 
+                                   TextColor="White"
+                                   Style="{DynamicResource PrimaryStyle}"/>
+                            <Label Text="Contact no" 
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center" 
+                                   TextColor="White"
+                                   Style="{DynamicResource PrimaryStyle}"/>
+                            <Label Text="Logout"
+                                   FontSize="20"
+                                   HorizontalTextAlignment="Center" 
+                                   TextColor="White"
+                                   Style="{DynamicResource PrimaryStyle}">
+
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding LogoutCommand}" Tapped="TapGestureRecognizer_Tapped_2"></TapGestureRecognizer>
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+
+            </Frame>
+
+
+            <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Start"
+            Margin="20,0,0,0">
+                <StackLayout>
+                    <StackLayout Margin="0,15,0,15" 
+                             Orientation="Horizontal">
+                        <BoxView WidthRequest="25"
+                                 BackgroundColor="CornflowerBlue"/>
+                        <Image Source="editProfile.png"
+                           HeightRequest="25"
+                           WidthRequest="25"/>
+                        <Label Style="{DynamicResource PrimaryStyle}"
+                       Text="Edit Profile"
+                       Font="20"
+                       TextColor="Black"    
+                               x:Name="GotoEditProfile"
+                       >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GotoEditProfile_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                    
+                    <BoxView 
+                        HeightRequest="1" 
+                        BackgroundColor="CornflowerBlue" 
+                        HorizontalOptions="FillAndExpand"
+                    
+                    />
+
+
+                    <StackLayout Margin="0,15,0,15" 
+                             Orientation="Horizontal">
+                        <BoxView WidthRequest="25"
+                                 BackgroundColor="CornflowerBlue"/>
+                        <Image Source="calendar.png"
+                           HeightRequest="25"
+                           WidthRequest="25"/>
+                        <Label Style="{DynamicResource PrimaryStyle}"
+                       Text="My Organized Events"
+                       Font="20"
+                       TextColor="Black"    
+                       x:Name="OrganizedEvents">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OrganizedEvents_Tapped" />
+                            </Label.GestureRecognizers>
+                            
+                        </Label>
+                    </StackLayout>
+
+                <!--Horizontal Line-->
+                <BoxView 
+                        HeightRequest="1" 
+                        BackgroundColor="CornflowerBlue" 
+                        HorizontalOptions="FillAndExpand"
+                    
+                    />
+
+
+                    <StackLayout Margin="0,15,0,15"
+                                 Orientation="Horizontal">
+                        <BoxView WidthRequest="25"
+                                 BackgroundColor="CornflowerBlue"/>
+                        <Image Source="calendarWithPencil.png"
+                           HeightRequest="25"
+                           WidthRequest="25"/>
+                        <Label Style="{DynamicResource PrimaryStyle}"
+                           Text="My Attended Events"
+                           Font="20"
+                           TextColor="Black"    
+                           >
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="AttendedEvents_Tapped" />
+                            </Label.GestureRecognizers>
+
+                        </Label>
+                    </StackLayout>
+                    <!--Horizontal Line-->
+                        <BoxView 
+                        HeightRequest="1" 
+                        BackgroundColor="CornflowerBlue" 
+                        HorizontalOptions="FillAndExpand" />
+
+                        
+                        <StackLayout Margin="0,15,0,15" 
+                                     Orientation="Horizontal">
+                        <BoxView WidthRequest="25"
+                                 BackgroundColor="CornflowerBlue"/>
+                        <Image Source="calendarWithClock.png"
+                           HeightRequest="25"
+                           WidthRequest="25"/>
+                        <Label Style="{DynamicResource PrimaryStyle}"
+                               Text="My Upcoming Events"
+                               Font="20"
+                               TextColor="Black"  
+                               x:Name="UpcomingEvents"
+                               >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer  Tapped="UpcomingEvents_Tapped">
+                                    
+                                </TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                        <!--Horizontal Line-->
+                        <BoxView 
+                        HeightRequest="1" 
+                        BackgroundColor="CornflowerBlue" 
+                        HorizontalOptions="FillAndExpand" />
+
+
+                    <StackLayout Margin="0,15,0,15"
+                                 Orientation="Horizontal">
+                        <BoxView WidthRequest="25"
+                                 BackgroundColor="CornflowerBlue"/>
+                        <Image Source="term.png"
+                           HeightRequest="25"
+                           WidthRequest="25"/>
+                        <Label Style="{DynamicResource PrimaryStyle}"
+                           Text="Terms And Condition"
+                           Font="20"
+                           TextColor="Black"    
+                           >
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Terms_Tapped" />
+                            </Label.GestureRecognizers>
+
+                        </Label>
+                    </StackLayout>
+                    <!--Horizontal Line-->
+                    <BoxView 
+                        HeightRequest="1" 
+                        BackgroundColor="CornflowerBlue" 
+                        HorizontalOptions="FillAndExpand" />
+
+
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+    
+    
+</ContentPage>

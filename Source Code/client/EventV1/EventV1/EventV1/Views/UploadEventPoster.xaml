@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventV1.Views.UploadEventPoster"
+             Title="Upload Event Poster">
+
+    <ScrollView>
+        <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+            <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+
+                    <Label Text="Upload Poster For Your Event" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+
+                </StackLayout>
+            </Frame>
+
+
+            <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+                <StackLayout>
+                    <Button Text="Pick Photo"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        FontSize="Large"
+                        Clicked="PickPhoto_Clicked"/>
+
+
+                    <Button Text="Take Photo"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        FontSize="Large"
+                        Clicked="TakePhoto_Clicked"/>
+
+                    <Image x:Name="FileImage"
+                       WidthRequest="400"
+                       HeightRequest="220"/>
+
+                    <Label x:Name="LocalPathLabel"
+                       TextColor="Black"
+                       FontSize="18"/>
+
+                    <Button Text="Upload Photo"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        FontSize="Large"                
+                        Clicked="UploadFile_Clicked"/>
+
+                    <Label x:Name="RemotePathLabel"
+                       FontSize="20"
+                       TextColor="Black"/>
+
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,2 @@
+resources;M:\EventV1\EventV1\EventV1.Android\obj\Debug\81\lp\40\jl\res\values\strings.xml
+string;M:\EventV1\EventV1\EventV1.Android\obj\Debug\81\lp\40\jl\res\values\strings.xml

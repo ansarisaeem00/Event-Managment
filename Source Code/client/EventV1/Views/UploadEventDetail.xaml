@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EventV1.ViewModels"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="EventV1.Views.UploadEventDetail"
+             Title="Upload Event Detail">
+    <ContentPage.BindingContext>
+        <viewmodels:AddNewEventDetails/>
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout>
+                <StackLayout x:Name="Detail">
+                <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+                    <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                        <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+
+                            <Label Text="Upload Your Event Detail" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+                        <StackLayout 
+                     >
+
+                            <Label Text="Event Title"
+                        FontSize="Medium"
+                       />
+                            <Entry Text="{Binding EventName}" 
+                        x:Name="TitleEntry"/>
+
+                            <Label Text="Event Venue"
+                   FontSize="Medium"/>
+                            <Entry Text="{Binding EventVenue}"
+                       x:Name="VenueEntry"/>
+
+                            <Label Text="Hosted College"
+                   FontSize="Medium"/>
+                            <Entry Text="{Binding CollegeName}"
+                       x:Name="HostEntry"/>
+
+                            <Label
+                        Text="Date"
+                        FontSize="Medium"/>
+                            <DatePicker 
+                                Date="{Binding date}"
+                                        x:Name="DateEntry">
+
+                                <DatePicker.MinimumDate>
+                                    <sys:DateTime x:FactoryMethod="Parse">
+                                        <x:Arguments>
+                                            <x:String>Jan 1 2000</x:String>
+                                        </x:Arguments>
+                                    </sys:DateTime>
+                                </DatePicker.MinimumDate>
+                                <DatePicker.MaximumDate>
+                                    <sys:DateTime x:FactoryMethod="Parse">
+                                        <x:Arguments>
+                                            <x:String>Dec 31 2050</x:String>
+                                        </x:Arguments>
+                                    </sys:DateTime>
+                                </DatePicker.MaximumDate>
+
+                            </DatePicker>
+
+                            <Label Text="Time"
+                           FontSize="Medium"/>
+                            <TimePicker Time="{Binding time}"
+                        x:Name="TimeEntry"
+                        />
+
+                            <Label Text="Category"
+                   FontSize="Medium"/>
+                            <Entry Text="{Binding Category}"
+                       x:Name="CatEntry"/>
+
+                            <Label Text="Event Description "
+                   FontSize="Medium"/>
+                            <Entry Text="{Binding Description}"
+                       x:Name="DescEntry"/>
+
+                        </StackLayout>
+                    </Frame>
+
+
+
+                </StackLayout>
+            </StackLayout>
+
+            
+            
+                <StackLayout x:Name="Poster">
+
+                <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+                    <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                        <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+
+                            <Label Text="Upload Poster For Your Event" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+                        <StackLayout>
+                            <Button Text="Pick Photo"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        FontSize="Large"
+                        Clicked="PickPhoto_Clicked"/>
+
+
+                            <Button Text="Take Photo"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                        FontSize="Large"
+                        Clicked="TakePhoto_Clicked"/>
+
+                            <Image x:Name="FileImage"
+                       WidthRequest="400"
+                       HeightRequest="220"/>
+
+                            <Label x:Name="LocalPathLabel"
+                       TextColor="Black"
+                       FontSize="18"/>
+
+
+                            <Label x:Name="RemotePathLabel"
+                       FontSize="20"
+                       TextColor="Black">
+                            </Label>
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+
+            <StackLayout x:Name="Resource">
+                <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+                    <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue"
+                           CornerRadius="20">
+                        <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+                            <Label Text="Upload Required Resources of Your Event " 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="CornflowerBlue"
+                   Margin="0,15,0,0"
+                   HeightRequest="16"
+                           CornerRadius="20">
+                        <Label Text=" Human Resources"
+                   HorizontalOptions="Center"
+                   Font="15"
+                   TextColor="White"
+                />
+                    </Frame>
+                    <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+                        <Grid x:Name="Overview">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="4*"></ColumnDefinition>
+                                <ColumnDefinition Width="4*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+
+                            <Label Text="Sr. NO"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                   Grid.Row="0" Grid.Column="0" 
+                   Style="{DynamicResource HeaderTablet}"/>
+                            <Label Text="Designated Role"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Grid.Row="0" Grid.Column="1"
+                   Style="{DynamicResource HeaderTablet}"
+                   />
+                            <Label Text="Name"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Grid.Row="0" Grid.Column="2"
+                   Style="{DynamicResource HeaderTablet}"
+                      />
+
+
+                            <Label Text="1"
+                   Grid.Row="1" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Faculty Co-Ordinator"
+                   Grid.Row="1" Grid.Column="1"
+                   Margin="0,12,0,0"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="1" Grid.Column="2"/>
+
+
+                            <Label Text="3"
+                   Grid.Row="2" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Student Co-ordinator"
+                        Margin="0,12,0,0"
+                        Grid.Row="2" Grid.Column="1"
+                        Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="2" Grid.Column="2"/>
+
+
+                            <Label Text="3"
+                        Grid.Row="3" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Sponsor"
+                        Margin="0,12,0,0"
+                   Grid.Row="3" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="3" Grid.Column="2"/>
+                            <Label Text="4"
+                        Grid.Row="4" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Tech-Support"
+                        Margin="0,12,0,0"
+                   Grid.Row="4" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="4" Grid.Column="2"/>
+                            <Label Text="5"
+                        Grid.Row="5" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Guest"
+                        Margin="0,12,0,0"
+                   Grid.Row="5" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="5" Grid.Column="2"/>
+                            <Label Text="6"
+                        Grid.Row="6" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                            <Label Text="Guest Teacher"
+                        Margin="0,12,0,0"
+                   Grid.Row="6" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                            <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="6" Grid.Column="2"/>
+
+                        </Grid>
+                    </Frame>
+
+
+                    <Frame  HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+
+                        <StackLayout>
+                            <Label Text="Expected Event Outcome"
+                                    FontSize="Medium"
+                                />
+                            <Entry Text="" 
+                                    x:Name="OutcomeEntry"/>
+
+                            <Label Text="Event Budget"
+                                    FontSize="Medium"
+                                   />
+                            <Entry 
+                                    x:Name="BudgetEntry"/>
+                            
+                            
+                        </StackLayout>
+                        
+                    </Frame>
+
+
+
+
+                </StackLayout>
+            </StackLayout>
+
+            <Button Text="Submit"
+                            x:Name="GoPosterUpload"
+                            BackgroundColor="CornflowerBlue" 
+                            HeightRequest="60"
+                            FontSize="Large"
+                            TextColor="White"
+                            Command="{Binding AddCommand}"
+                            Clicked="GoPosterUpload_Clicked"
+                            />
+
+
+        </StackLayout>
+        
+        
+    </ScrollView>
+</ContentPage>

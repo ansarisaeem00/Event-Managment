@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:EventV1.ViewModels"
+             x:Class="EventV1.StackProfile2"
+             NavigationPage.HasNavigationBar="False"
+             Title="Profile">
+    <ContentPage.BindingContext>
+        <viewmodels:LoginViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout"
+                     Command="{Binding LogoutCommand}"
+                     Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Spacing="0">
+        <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+
+            <StackLayout>
+                <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+
+                    <Frame 
+                   x:Name="CircleProfilePic"
+                   CornerRadius="70"
+                   HeightRequest="110"
+                   WidthRequest="110"
+                   OutlineColor="Blue"
+                >
+                        <Image Source="profilePic.png" 
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       HorizontalOptions="CenterAndExpand"
+                       Aspect="AspectFit" />
+
+                    </Frame>
+                    <Label Text="UserName" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+                    <Label Text="Some More Text"
+                       FontSize="12" 
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Style="{DynamicResource SecondaryStyle}"/>
+                </StackLayout>
+            </StackLayout>
+            
+
+        </Frame>
+
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Start"
+            Padding="5">
+            <Frame x:Name="CircleShowsNo"
+                   CornerRadius="27"
+                   HeightRequest="13"
+                   WidthRequest="13"
+                   OutlineColor="Blue"
+                >
+                <Label
+                       x:Name="OrganizedCirlceText"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="10"
+                        FontAttributes="Bold"
+                    >
+                </Label>
+            </Frame>
+            <StackLayout Margin="0,8">
+                <Label Style="{DynamicResource PrimaryStyle}"
+                       Text="Your Organized Events:"
+                       Font="25"
+                       x:Name="OrganizedText"/>
+            </StackLayout>
+
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,10,0,0"
+                     >
+            <Image 
+                    HorizontalOptions="Center"
+                    Source="HackPoster.jpg"
+                    HeightRequest="130"
+                    WidthRequest="130"
+                >
+            </Image>
+            
+            <Image
+                    Source="MusicEvent.png"
+                    HeightRequest="130"
+                    WidthRequest="130"
+                />
+            <Frame x:Name="CircleShowsArrow"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   CornerRadius="40"
+                   HeightRequest="40"
+                   WidthRequest="40"
+                >
+                <Image
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Source="RightArrow.jpg"
+                    >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ViewAllPost"/>
+                    </Image.GestureRecognizers>
+
+
+                </Image>
+
+            </Frame>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,30,0,0">
+            <Label 
+                FontAttributes="Bold"
+                x:Name="Attendence"
+                Margin="0,12"
+                Text="Attendence :"
+                Font="20"
+            />
+            <SearchBar
+                Placeholder="Search Your Ongoing Eents Here"
+                FontSize="Medium"
+                WidthRequest="300"
+                />
+
+        </StackLayout>
+        <StackLayout>
+            <Button
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="GoButton"
+                Text="GO"
+                Clicked="GoButton_Clicked"/>
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>

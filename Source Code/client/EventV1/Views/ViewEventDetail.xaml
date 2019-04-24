@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventV1.Views.ViewEventDetail">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="HeaderTablet" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="DetailTablet" TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+
+    <ScrollView>
+        <StackLayout>
+        <Frame OutlineColor="CornflowerBlue"
+               HasShadow="True">
+            <Label
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Text="EventName Detail"
+                Font="25"
+                />
+        </Frame>
+
+
+
+        <Frame BackgroundColor="CornflowerBlue"
+               Margin="0,15,0,0">
+            <Label Text="Event Information"
+                   HorizontalOptions="Center"
+                   Font="15"
+                   TextColor="White"
+                />
+        </Frame>
+
+        <Frame>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Event Name :"
+                         />
+                    <Label Text="Live Music Event"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Organizer's Name :"
+                            />
+                    <Label Text="John Wick"/>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Organizer's E-mail :"
+                            />
+                    <Label Text="JohnWick@gmail.com"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Venue :"
+                            />
+                    <Label Text="Mumbai"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Date :"
+                            />
+                    <Label Text="17/2/2019"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Time :"
+                            />
+                    <Label Text="9am - 5pm"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Description"
+                            />
+                    <Label Text="This is a  live music event "/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+
+            <StackLayout>
+                <Image Source="MusicEvent.png"
+                       HeightRequest="250"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+
+            <Button Text="Enroll"
+                    BackgroundColor="CornflowerBlue"
+                    TextColor="White"/>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

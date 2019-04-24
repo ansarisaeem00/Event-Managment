@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventV1.Views.FeedBack">
+    <ScrollView>
+        <StackLayout x:Name="HomeScreen">
+            <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+                    <Label Text="Feedback" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="Center"
+                     Margin="0,25,0,0"
+                     BackgroundColor="White">
+                <StackLayout>
+                    <Label x:Name="ShowRating" Text="{Binding Source={x:Reference Rating} ,
+                            Path=Value,
+                            StringFormat='Rating : {0:F1}' }" 
+                            FontSize="Medium"   />
+                    <Slider x:Name="Rating"/>
+
+                    <Label x:Name="Review"
+                           Text="Comment or Review"
+                           FontSize="Medium"/>
+                    <Entry/>
+                    <Button Text="Submit"
+                            BackgroundColor="CornflowerBlue" 
+                            HeightRequest="60"
+                            FontSize="Large"
+                            TextColor="White"
+                            x:Name="Submit"
+                            Clicked="Submit_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

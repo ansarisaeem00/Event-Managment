@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventV1.Views.UploadEventResource"
+             Title="Upload Resource">
+
+    <ScrollView>
+        <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+            <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+                    <Label Text="Upload Required Resources of Your Event " 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="CornflowerBlue"
+                   Margin="0,15,0,0"
+                   HeightRequest="16">
+                <Label Text=" Human Resources"
+                   HorizontalOptions="Center"
+                   Font="15"
+                   TextColor="White"
+                />
+            </Frame>
+            <Frame>
+            <Grid x:Name="Overview">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label Text="Sr. NO"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                   Grid.Row="0" Grid.Column="0" 
+                   Style="{DynamicResource HeaderTablet}"/>
+                <Label Text="Designated Role"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Grid.Row="0" Grid.Column="1"
+                   Style="{DynamicResource HeaderTablet}"
+                   />
+                <Label Text="Name"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Grid.Row="0" Grid.Column="2"
+                   Style="{DynamicResource HeaderTablet}"
+                      />
+
+
+                <Label Text="1"
+                   Grid.Row="1" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Label Text="Faculty Co-Ordinator"
+                   Grid.Row="1" Grid.Column="1"
+                   Margin="0,12,0,0"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="1" Grid.Column="2"/>
+
+
+                <Label Text="3"
+                   Grid.Row="2" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Label Text="Student Co-ordinator"
+                        Margin="0,12,0,0"
+                        Grid.Row="2" Grid.Column="1"
+                        Style="{DynamicResource DetailTablet}"/>
+                <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="2" Grid.Column="2"/>
+
+
+                <Label Text="3"
+                        Grid.Row="3" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                <Label Text="Sponsor"
+                        Margin="0,12,0,0"
+                   Grid.Row="3" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="3" Grid.Column="2"/>
+                <Label Text="4"
+                        Grid.Row="4" Grid.Column="0"
+                        Style="{DynamicResource DetailTablet}"/>
+                <Label Text="Tech-Support"
+                        Margin="0,12,0,0"
+                   Grid.Row="4" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+                    <Entry Style="{DynamicResource DetailTablet}"
+                       Grid.Row="4" Grid.Column="2"/>
+
+                </Grid>
+            </Frame>
+
+
+
+            <Frame BackgroundColor="CornflowerBlue"
+               Margin="0,15,0,0">
+                <Label Text="Budget Management"
+                   HorizontalOptions="Center"
+                   Font="15"
+                   TextColor="White"
+                />
+            </Frame>
+            <Frame>
+            <Grid x:Name="Expenses">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Text="Expense Category"
+                       FontAttributes="Bold"
+                       FontSize="Large"                       
+                       Grid.Row="0" Grid.Column="0" 
+                       Style="{DynamicResource HeaderTablet}"/>
+                <Label Text="Expense Category"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       Grid.Row="0" Grid.Column="1"
+                       Style="{DynamicResource HeaderTablet}"/>
+
+
+                <Label Text="Decoration"
+                   Grid.Row="1" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Entry
+                   Grid.Row="1" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+
+                <Label Text="Food"
+                   Grid.Row="2" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                <Entry 
+                   Grid.Row="2" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+
+                    <Label Text="Price"
+                   Grid.Row="3" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                    <Entry
+                   Grid.Row="3" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+
+                    <Label Text="Promotion"
+                   Grid.Row="4" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                    <Entry
+                   Grid.Row="4" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+
+
+                    <Label Text="Total"
+                   Grid.Row="5" Grid.Column="0"
+                   Style="{DynamicResource DetailTablet}"/>
+                    <Label Text="15$"
+                   Grid.Row="5" Grid.Column="1"
+                   Style="{DynamicResource DetailTablet}"/>
+            </Grid>
+            </Frame>
+
+
+
+
+            <Button
+                BackgroundColor="CornflowerBlue"
+                TextColor="White"
+                Text="Finish"
+                x:Name="FinishUploadEvent"
+                Clicked="FinishUploadEvent_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

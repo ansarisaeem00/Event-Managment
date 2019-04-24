@@ -1,0 +1,135 @@
+G:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.deps.json
+G:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.dll
+G:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.pdb
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csprojAssemblyReference.cache
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\App.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\EditProfile.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Report.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\StackProfile2.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewAllPost.xaml.g.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csproj.CoreCompileInputs.cache
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfoInputs.cache
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfo.cs
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\XamlC.stamp
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.dll
+G:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.pdb
+I:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.deps.json
+I:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.dll
+I:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.pdb
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csprojAssemblyReference.cache
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\App.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\EditProfile.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Report.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\StackProfile2.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventDetail.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventPoster.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewAllPost.xaml.g.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csproj.CoreCompileInputs.cache
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfoInputs.cache
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfo.cs
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.dll
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.pdb
+I:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\XamlC.stamp
+M:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.deps.json
+M:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.dll
+M:\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.pdb
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csprojAssemblyReference.cache
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\App.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Temp\BtnEntry.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\EditProfile.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\FeedBack.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Report.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\StackProfile2.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventDetail.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventPoster.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventResource.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewAllPost.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csproj.CoreCompileInputs.cache
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfoInputs.cache
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfo.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.dll
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.pdb
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\AttendedEvents.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\OrganizedEvents.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UpcomingEvents.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewEventDetail.xaml.g.cs
+M:\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.deps.json
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.dll
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.pdb
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Temp\BtnEntry.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\AttendedEvents.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\EditProfile.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\FeedBack.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\KurbanEvent.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\OrganizedEvents.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Predict.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register2.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Report.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\StackProfile2.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Terms.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UpcomingEvents.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventDetail.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventPoster.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventResource.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewAllPost.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewEventDetail.xaml.g.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csproj.CoreCompileInputs.cache
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfoInputs.cache
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfo.cs
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.dll
+C:\Users\Ashraf\source\repos\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.pdb
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.deps.json
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.dll
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\bin\Debug\netstandard2.0\EventV1.pdb
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Temp\BtnEntry.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\AttendedEvents.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\EditProfile.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\FeedBack.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\KurbanEvent.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\OrganizedEvents.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Predict.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Register2.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Report.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\SplashScreen.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\StackProfile2.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\Terms.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UpcomingEvents.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventDetail.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventPoster.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\UploadEventResource.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewAllPost.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\Views\ViewEventDetail.xaml.g.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csproj.CoreCompileInputs.cache
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfoInputs.cache
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.AssemblyInfo.cs
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.dll
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.pdb
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\EventV1.csprojAssemblyReference.cache
+C:\Users\SUPER-COMPUTER.IS7\source\repos\New folder\EventV1\EventV1\EventV1\obj\Debug\netstandard2.0\XamlC.stamp

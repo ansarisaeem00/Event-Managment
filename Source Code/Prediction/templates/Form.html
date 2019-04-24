@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Prediction</title>
+	<link rel="stylesheet" href="/static/style.css" type="text/css">
+    <script>
+
+    </script>
+</head>
+<body>
+
+
+<form action="/events" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Enter Event Detail</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Event Name" name="EventName">
+				<label class="login-field-icon fui-user" for="Event-Name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Event Rating" name="EventRating">
+				<label class="login-field-icon fui-lock" for="event-rating"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Audience" name="Audience">
+				<label class="login-field-icon fui-lock" for="event-audience"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Feedback" name="Feedback">
+				<label class="login-field-icon fui-lock" for="event-Feedback"></label>
+				</div>
+
+                <input type="submit" value="Submit" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+</body>
+</html>

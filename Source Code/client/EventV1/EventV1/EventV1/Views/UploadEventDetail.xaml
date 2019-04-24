@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventV1.Views.UploadEventDetail"
+             Title="Upload Event Detail">
+    <ScrollView>
+        <StackLayout Spacing="0"
+                 BackgroundColor="AliceBlue">
+            <Frame HasShadow="True"
+               Margin="0,0,0,2"
+               BackgroundColor="CornflowerBlue">
+                <StackLayout Spacing="2" 
+                         HorizontalOptions="CenterAndExpand"
+                         >
+
+                    <Label Text="Upload Your Event Detail" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       Style="{DynamicResource PrimaryStyle}"/>
+
+                </StackLayout>
+            </Frame>
+
+
+            <Frame HasShadow="True"
+               CornerRadius="20"
+                     WidthRequest="350"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Margin="0,15,0,0"
+                     BackgroundColor="White">
+
+                <StackLayout 
+                     >
+
+                    <Label Text="Event Title"
+                        FontSize="Medium"
+                       />
+                    <Entry x:Name="TitleEntry"/>
+
+                    <Label Text="Event Venue"
+                   FontSize="Medium"/>
+                    <Entry 
+                       x:Name="VenueEntry"/>
+
+                    <Label Text="Hosted College"
+                   FontSize="Medium"/>
+                    <Entry 
+                       x:Name="HostEntry"/>
+
+                    <Label
+                        Text="Date"
+                        FontSize="Medium"/>
+                    <DatePicker x:Name="DateEntry"/>
+
+                    <Label Text="Time"
+                           FontSize="Medium"/>
+                    <TimePicker
+                        x:Name="TimeEntry"
+                        />
+
+                    <Label Text="Category"
+                   FontSize="Medium"/>
+                    <Entry 
+                       x:Name="CatEntry"/>
+
+                    <Label Text="Event Description "
+                   FontSize="Medium"/>
+                    <Entry 
+                       x:Name="DescEntry"/>
+
+                    <Button Text="Next Step"
+                            x:Name="GoPosterUpload"
+                            BackgroundColor="CornflowerBlue" 
+                            HeightRequest="60"
+                            FontSize="Large"
+                            TextColor="White"
+                            Clicked="GoPosterUpload_Clicked"
+                            />
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

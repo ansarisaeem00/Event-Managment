@@ -1,0 +1,157 @@
+﻿
+@{
+    ViewBag.Title = "Report";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Report of the event" />
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="~/Content/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="top">
+    <div id="cv" class="instaFade">
+        <div class="mainDetails">
+
+            <div class="name">
+                <h1 class="quickFade delayTwo"><span id="name">Hackathon</h1>
+            </div>
+
+            <div id="contactDetails" class="quickFade delayFour">
+                <ul>
+                    <li>organizer name</li>
+                    <li><span id="email"></a>kurban.ansari999@gmail.com</li>
+                    <li><span id="phone">9860831157</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="mainArea" class="quickFade delayFive">
+            <section>
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Event Overview</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        <h5> Event Name : <span id="full_name">Hackathon </span> </h5>
+                        <h5> Event Venue : <span id="FatherName">Panvel </span> </h5>
+                        <h5> Event Date : <span id="MotherName">04/04/2019 </span> </h5>
+                        <h5> Event Time: <span id="Gender">09:00 </span> </h5>
+                        <h5> Event Description : <span id="Nationality">This is 12 hour inter college event </span> </h5>
+                        <br>
+
+                    </div>
+
+                </article>
+                <div class="clear"></div>
+            </section>
+
+
+            <section>
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Event Resource detail</h1>
+                    </div>
+
+                    <div class="sectionContent">
+                        <h5> Faculty co-ordinator : <span id="full_name">Ashraf </span> </h5>
+                        <h5> Student co-ordinator : <span id="FatherName">Saeem </span> </h5>
+                        <h5> Sponsor : <span id="MotherName">Asim </span> </h5>
+                        <h5> Tech Support : <span id="Gender">Huzaifa </span> </h5>
+                        <h5> Guest : <span id="Nationality">Zaid </span> </h5>
+                        <h5> Resource Person : <span id="Nationality">Neha </span> </h5>
+                        <br>
+
+                    </div>
+
+                </article>
+                <div class="clear"></div>
+            </section>
+
+            <section>
+                <div class="sectionTitle">
+                    <h1>Event Outcome</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <article>
+                        <p class="subDetails">Test<span id="College"></span></p>
+
+                    </article>
+                    <hr>
+                </div>
+                <div class="clear"></div>
+            </section>
+
+            <section>
+                <div class="sectionTitle">
+                    <h1>Event Budget</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <article>
+                        <p class="subDetails">10000<span id="College"></span></p>
+
+                    </article>
+                    <hr>
+                </div>
+                <div class="clear"></div>
+            </section>
+
+            <section>
+                <div class="sectionTitle">
+                    <h1>Event Rating (out of 5)</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <article>
+                        <p class="subDetails">4<span id="College"></span></p>
+
+                    </article>
+                    <hr>
+                </div>
+                <div class="clear"></div>
+            </section>
+
+
+            <section>
+                <div class="sectionTitle">
+                    <h1>Event Attendence</h1>
+                </div>
+
+                <div class="sectionContent">
+                    <article>
+                        <h2>Total no of Attendees</h2>
+                        <p class="subDetails"> <span id="College"></span></p>
+
+                    </article>
+                    <hr>
+                </div>
+                <div class="clear"></div>
+
+                <div >
+                    <button class="btn-grad" style="height: 35px;width: 90px;">Print</button>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
